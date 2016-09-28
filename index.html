@@ -36,7 +36,7 @@
 		</a>
 
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">XZFFF</a></h1>
 		</hgroup>
 
 		
@@ -95,7 +95,7 @@
       <nav id="mobile-nav">
   	<div class="overlay">
   		<div class="slider-trigger"><i class="icon-list"></i></div>
-  		<h1 class="header-author js-mobile-header hide">John Doe</h1>
+  		<h1 class="header-author js-mobile-header hide">XZFFF</h1>
   	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
@@ -105,7 +105,7 @@
 				
 			</div>
 			<hgroup>
-			  <h1 class="header-author">John Doe</h1>
+			  <h1 class="header-author">XZFFF</h1>
 			</hgroup>
 			
 			<nav class="header-menu">
@@ -156,14 +156,32 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>在搭建博客的时候，我遇到了很多的问题，包括很多迷之打错和很多玄学问题。好在，在通过群邮件讨论和自己在网络上查阅资料的方方式，将问题一一解决了~</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<h2 id="HEXO框架的下载"><a href="#HEXO框架的下载" class="headerlink" title="##HEXO框架的下载"></a>##HEXO框架的下载</h2><p>Hexo的搭建<br>在最开始我在Node.js中进行了操作，等我操作了两行命令发现有点不对，仔细一看，应该使用命令行工具——CMD</p>
+<p>###1、在CMD执行语句进行对hexo的安装</p>
+<p><strong>安装hexo</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo -g</div></pre></td></tr></table></figure></p>
+<p><strong>新建目录blog</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir blog</div></pre></td></tr></table></figure></p>
+<p><strong>进入到blog目录下</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> blog</div></pre></td></tr></table></figure></p>
+<p><strong>初始化hexo</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
+<p><strong>启动hexo server</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure></p>
+<p>在浏览器中输入网址<br>localhost:4000<br>这时就能看到一个最原始的HEXO的博客页面，虽然丑了点，但是好歹成功了。<br>PS：记得关掉 <strong>hexo server</strong> 即输入<code>Ctrl+C</code></p>
+<p>###2、关联GitHub与本机上的Blog文件夹</p>
+<p><strong>创建GitHhub项目</strong><br>我在我的GitHub上面直接创建了一个新的项目,名字就叫 <strong>XZFFF.github.io</strong> 然后我迫不及待的在Chrome地址栏输入<a href="http://xzfff.github.io" target="_blank" rel="external">XZFFF.github.io</a>然后就出现了巨大的<strong>404</strong>。原因就在于我还没有上传任何的文件上去</p>
+<p><strong>关联GitHub与blog文件夹</strong><br>于是下一步就是将我本机安装的Hexo框架的blog文件夹与我GitHub上面的XZFFF.github.io项目关联了。<br>首先是GitHub中项目的SSH链接，我的是 <strong>XZFFF/XZFFF.github.io</strong> 然后打开blog文件夹，用<strong>NotePad++</strong>打开<strong>_config.yml</strong>文件，修改最下面的deploy属性:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">   <span class="built_in">type</span>:  git</div><div class="line">   repository:  git@github.com:XZFFF/XZFFF.github.io.git</div><div class="line">   branch:  master</div></pre></td></tr></table></figure></p>
+<p>PS:中间的repository属性需要按照个人的GitHub的SSH来改</p>
+<p>修改这个属性的意思大概就是将文件打包成<strong>.git</strong>形式然后同步到<strong>XZFFF/XZFFF.github.io.git</strong>上面，而同步的分支则是<strong>master</strong>（PS：在Git中可以有多分支）</p>
+<p>随后再输入以下命令进行关联操作<br><strong>安装hexo-deployer-git</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git -S</div></pre></td></tr></table></figure></p>
+<p><strong>对本地hexo框架的打包</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure></p>
+<p><strong>对本机blog的上传</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>###3、查看自己的Blog</p>
+<p>使用Chrome打开GitHub后，发现自己的<strong>XZFFF.github.io</strong>项目中除了readme.md还出现了hexo的框架，这个就代表自己已经完成了本机blog文件夹与GitHub项目的关联。<br>然后在地址栏输入<a href="http://xzfff.github.io" target="_blank" rel="external">XZFFF.github.io</a>发现我的博客已经可以在网上查看到了~</p>
+<p>既然已经关联了本地的blog文件夹与GitHub的项目，那么如果需要更改GitHub上面的文件的话，只需要在本机上面改好后，在blog文件夹使用bash命令依次输入以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>然后就可以发现自己的博客已经完成了更新~</p>
+<h2 id="HEXO主题的更改与博客内容的动态更新"><a href="#HEXO主题的更改与博客内容的动态更新" class="headerlink" title="##HEXO主题的更改与博客内容的动态更新"></a>##HEXO主题的更改与博客内容的动态更新</h2><p>###1、对HEXO主题的修改</p>
+<p>打开blog文件夹就可以看到<strong>themes</strong>文件夹，这个文件夹中就是主题的配置了。而HEXO其实在GitHub上可以找到很多的很好看的主题。我使用的是偏简约风格的<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">Yilia</a>主题。只需要下载下来然后解压，替换掉<strong>themes</strong>中原有的文件即可。<br>而对于博客中一些具体内容的修改，则是在<strong>~\blog\themes\landscape\_config.yml</strong>中完成的。</p>
+<p>###2、博客内容的动态更新</p>
+<p>虽然是静态博客搭建，但是博客内容的更新是必不可少的。而更新博客内容只需要编辑好后，在<strong>~\blog\source_posts\hello_world.md</strong>中更改即可。</p>
+<p>##MarkDown的学习</p>
+<p>由于博客需要编辑的是.md文件，因此特意学了一下MarkDown的语法。使用的是<a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">CMD MarkDown</a>来编辑（真心推荐）</p>
 
       
     </div>
@@ -198,7 +216,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2016 John Doe
+    		&copy; 2016 XZFFF
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
